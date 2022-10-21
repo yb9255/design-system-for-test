@@ -10,3 +10,5 @@ function Form({ onSubmit, children }: FormType) {
 }
 
 const S_Form = styled.form``;
+
+export default Form;

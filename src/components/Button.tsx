@@ -1,7 +1,11 @@
 import styled from "styled-components/macro";
 
-function Button() {
-  return <S_Button>button</S_Button>;
+interface ButtonType {
+  name: string;
+}
+
+function Button({ name }: ButtonType) {
+  return <S_Button>{name}</S_Button>;
 }
 
 const S_Button = styled.button``;
