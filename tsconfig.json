@@ -12,10 +12,11 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "sourceMap": true,
     "jsx": "react-jsx",
     "declaration": true,
     "declarationDir": "dist"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["**/*.stories.tsx", "src/__tests__", "src/setupTests.ts"]
 }

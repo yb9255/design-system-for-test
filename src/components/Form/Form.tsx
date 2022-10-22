@@ -1,8 +1,9 @@
+import React from "react";
 import styled from "styled-components/macro";
 
 export interface FormType {
   onSubmit(event: React.FormEvent<HTMLFormElement>): void;
-  children: React.ReactNode;
+  children: JSX.Element;
 }
 
 function Form({ onSubmit, children }: FormType) {
