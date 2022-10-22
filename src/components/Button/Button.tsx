@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 
-interface ButtonType {
+export interface ButtonType {
   name: string;
 }
 

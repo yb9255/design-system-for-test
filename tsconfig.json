@@ -15,8 +15,7 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "declaration": true,
-    "declarationDir": "./build"
+    "declarationDir": "dist"
   },
-  "include": ["src"],
-  "exclude": ["src/index.tsx"]
+  "include": ["src"]
 }

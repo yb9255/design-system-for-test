@@ -1,12 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import {
+  Button,
+  Form,
+  Input,
+  ButtonType,
+  FormType,
+  InputProps,
+} from "./components";
+export { Button, Form, Input };
+export type { ButtonType, FormType, InputProps };

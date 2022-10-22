@@ -1,9 +1,10 @@
 {
-  "name": "design-system-for-test",
-  "version": "0.1.0",
-  "module": "build/static/js/main.js",
+  "name": "ydsft",
+  "version": "0.0.1",
+  "description": "디자인 시스템 테스트",
+  "module": "dist/main.js",
   "license": "MIT",
-  "types": "build/types/index.d.ts",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@craco/craco": "^7.0.0-alpha.8",
     "@testing-library/jest-dom": "^5.16.5",
@@ -22,9 +23,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "tsc --noEmit && react-scripts build && tsc --emitDeclarationOnly",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "tsc --noEmit && rm -rf dist && craco build && tsc --emitDeclarationOnly",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
